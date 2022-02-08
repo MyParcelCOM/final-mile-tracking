@@ -2,6 +2,7 @@
     "name": "myparcelcom/final-mile-tracking",
     "description": "Final Mile Tracking library for the MyParcel.com microservices",
     "type": "library",
+    "license": "Apache-2.0",
     "require-dev": {
         "mockery/mockery": "^1.5",
         "phpunit/phpunit": "^9.5"
