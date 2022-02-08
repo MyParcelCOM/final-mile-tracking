@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MyParcelCom\\TrackingModule\\": "src/"
+            "MyParcelCom\\": "src/"
         }
     },
     "autoload-dev": {

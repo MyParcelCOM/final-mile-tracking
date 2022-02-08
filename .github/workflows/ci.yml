@@ -1,0 +1,21 @@
+name: CI
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Composer
+        uses: php-actions/composer@v5
+        with:
+          php_version: 8.0
+
+      - name: PHPUnit
+        uses: php-actions/phpunit@v2
+        with:
+          php_version: 8.0
+          configuration: phpunit.xml
