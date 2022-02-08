@@ -13,15 +13,15 @@ class FinalMileCarrier
 
     private const CORREO_ARGENTINO = 'Correo Argentino';
     private const AUSTRALIA_POST = 'Australia Post';
-    private const ÖSTERREICHISCHE_POST = 'Österreichische Post';
+    private const OSTERREICHISCHE_POST = 'Österreichische Post';
     private const BPOST = 'bpost';
     private const CORREIOS_DE_BRASIL = 'Correios de Brasil';
     private const BULGARIAN_POSTS = 'Bulgarian Posts';
     private const CANADA_POST = 'Canada Post';
     private const CORREOS_CHILE = 'Correos Chile';
-    private const HRVATSKA_POŠTA = 'Hrvatska pošta';
+    private const HRVATSKA_POSTA = 'Hrvatska pošta';
     private const CYPRUS_POST = 'Cyprus Post';
-    private const ČESKÁ_POŠTA = 'Česká pošta';
+    private const CESKA_POSTA = 'Česká pošta';
     private const EGYPT_POST = 'Egypt Post';
     private const OMNIVA = 'Omniva';
     private const POSTI = 'Posti';
@@ -39,7 +39,7 @@ class FinalMileCarrier
     private const JAPAN_POST = 'Japan Post';
     private const KOREA_POST = 'Korea Post';
     private const LATVIJAS_PASTS = 'Latvijas Pasts';
-    private const LIETUVOS_PAŠTAS = 'Lietuvos paštas';
+    private const LIETUVOS_PASTAS = 'Lietuvos paštas';
     private const POSTLUXEMBOURG = 'POSTLuxembourg';
     private const POS_MALAYSIA = 'Pos Malaysia';
     private const MALTA_POST = 'Malta Post';
@@ -51,11 +51,11 @@ class FinalMileCarrier
     private const PHLPOST = 'PHLPost';
     private const POCZTA_POLSKA = 'Poczta Polska';
     private const CTT = 'CTT';
-    private const POȘTA_ROMÂNĂ = 'Poșta Română';
+    private const POSTA_ROMANA = 'Poșta Română';
     private const RUSSIA_POST = 'Russia Post';
     private const SINGAPORE_POST = 'Singapore Post';
-    private const SLOVENSKÁ_POŠTA = 'Slovenská pošta';
-    private const POŠTA_SLOVENIJE = 'Pošta Slovenije';
+    private const SLOVENSKA_POSTA = 'Slovenská pošta';
+    private const POSTA_SLOVENIJE = 'Pošta Slovenije';
     private const SOUTH_AFRICAN_POST_OFFICE = 'South African Post Office';
     private const CORREOS = 'Correos';
     private const POSTNORD = 'PostNord';
@@ -70,15 +70,15 @@ class FinalMileCarrier
     private const FINAL_MILE_CARRIERS = [
         'AR' => ['name' => self::CORREO_ARGENTINO, 'url' => 'https://www.correoargentino.com.ar/formularios/oidn'],
         'AU' => ['name' => self::AUSTRALIA_POST, 'url' => 'https://auspost.com.au/mypost/track/#/details/%s'],
-        'AT' => ['name' => self::ÖSTERREICHISCHE_POST, 'url' => 'https://www.post.at/sv/sendungsdetails?snr=%s'],
+        'AT' => ['name' => self::OSTERREICHISCHE_POST, 'url' => 'https://www.post.at/sv/sendungsdetails?snr=%s'],
         'BE' => ['name' => self::BPOST, 'url' => 'https://track.bpost.cloud/btr/web/#/search?lang=fr&itemCode=%s&postalCode=3080'],
         'BR' => ['name' => self::CORREIOS_DE_BRASIL, 'url' => 'https://rastreamento.correios.com.br/app/index.php'],
         'BG' => ['name' => self::BULGARIAN_POSTS, 'url' => 'https://www.bgpost.bg/IPSWebTracking/IPSWeb_item_events.asp?itemid=%s&submit=Follow'],
         'CA' => ['name' => self::CANADA_POST, 'url' => 'https://www.canadapost-postescanada.ca/track-reperage/en#/details/%s'],
         'CL' => ['name' => self::CORREOS_CHILE, 'url' => 'https://www.correos.cl/web/guest/seguimiento-en-linea?codigos=%s#0'],
-        'HR' => ['name' => self::HRVATSKA_POŠTA, 'url' => 'https://posiljka.posta.hr/Tracking/Details?Barcode=%s'],
+        'HR' => ['name' => self::HRVATSKA_POSTA, 'url' => 'https://posiljka.posta.hr/Tracking/Details?Barcode=%s'],
         'CY' => ['name' => self::CYPRUS_POST, 'url' => 'https://ips.cypruspost.gov.cy/ipswebtrack/IPSWeb_item_events.aspx?itemid=%s&Submit=Submit'],
-        'CZ' => ['name' => self::ČESKÁ_POŠTA, 'url' => 'https://www.postaonline.cz/en/trackandtrace/-/zasilka/cislo?parcelNumbers=%s'],
+        'CZ' => ['name' => self::CESKA_POSTA, 'url' => 'https://www.postaonline.cz/en/trackandtrace/-/zasilka/cislo?parcelNumbers=%s'],
         'DK' => ['name' => self::POSTNORD, 'url' => 'https://www.postnord.dk/varktojer/track-trace'],
         'EG' => ['name' => self::EGYPT_POST, 'url' => 'https://www.egyptpost.org/track-details?itemReference=%s&as_fid=675b5568121a827a35964e8bfd8b4e83c0cf7c4d'],
         'EE' => ['name' => self::OMNIVA, 'url' => 'https://www.omniva.ee/abi/jalgimine'],
@@ -97,7 +97,7 @@ class FinalMileCarrier
         'JP' => ['name' => self::JAPAN_POST, 'url' => 'https://trackings.post.japanpost.jp/services/srv/search/direct?reqCodeNo1=%s&searchKind=S002&locale=ja'],
         'KP' => ['name' => self::KOREA_POST, 'url' => 'https://service.epost.go.kr/trace.RetrieveEmsRigiTraceList.comm?POST_CODE=%s&displayHeader=N'],
         'LV' => ['name' => self::LATVIJAS_PASTS, 'url' => 'https://www.pasts.lv/en/Category/Tracking_of_Postal_Items/'],
-        'LT' => ['name' => self::LIETUVOS_PAŠTAS, 'url' => 'https://old.post.lt/en/help/parcel-search'],
+        'LT' => ['name' => self::LIETUVOS_PASTAS, 'url' => 'https://old.post.lt/en/help/parcel-search'],
         'LU' => ['name' => self::POSTLUXEMBOURG, 'url' => 'https://www.post.lu/en/particuliers/colis-courrier/track-and-trace#/result'],
         'MY' => ['name' => self::POS_MALAYSIA, 'url' => 'https://parcelsapp.com/en/tracking/%s'],
         'MT' => ['name' => self::MALTA_POST, 'url' => 'https://www.maltapost.com/tracking#/tracking'],
@@ -109,11 +109,11 @@ class FinalMileCarrier
         'PH' => ['name' => self::PHLPOST, 'url' => 'https://www.phlpost.gov.ph/'],
         'PL' => ['name' => self::POCZTA_POLSKA, 'url' => 'https://emonitoring.poczta-polska.pl/'],
         'PT' => ['name' => self::CTT, 'url' => 'https://www.ctt.pt/feapl_2/app/open/objectSearch/objectSearch.jspx?lang=def'],
-        'RO' => ['name' => self::POȘTA_ROMÂNĂ, 'url' => 'https://www.posta-romana.ro/track-trace.html'],
+        'RO' => ['name' => self::POSTA_ROMANA, 'url' => 'https://www.posta-romana.ro/track-trace.html'],
         'RU' => ['name' => self::RUSSIA_POST, 'url' => 'https://www.pochta.ru/tracking#%s'],
         'SG' => ['name' => self::SINGAPORE_POST, 'url' => 'https://www.singpost.com/send-receive/receive-mail-parcel'],
-        'SK' => ['name' => self::SLOVENSKÁ_POŠTA, 'url' => 'https://tandt.posta.sk/'],
-        'SI' => ['name' => self::POŠTA_SLOVENIJE, 'url' => 'https://sledenje.posta.si/'],
+        'SK' => ['name' => self::SLOVENSKA_POSTA, 'url' => 'https://tandt.posta.sk/'],
+        'SI' => ['name' => self::POSTA_SLOVENIJE, 'url' => 'https://sledenje.posta.si/'],
         'ZA' => ['name' => self::SOUTH_AFRICAN_POST_OFFICE, 'url' => 'http://globaltracktrace.ptc.post/gtt.web/'],
         'ES' => ['name' => self::CORREOS, 'url' => 'https://www.correos.es/es/es/herramientas/localizador/envios/detalle?tracking-number=%s'],
         'SE' => ['name' => self::POSTNORD, 'url' => 'https://www.postnord.se/vara-verktyg/spara-brev-paket-och-pall?shipmentId=%s'],
@@ -131,7 +131,10 @@ class FinalMileCarrier
      */
     public function __construct(private string $countryCode, private string $trackingCode)
     {
-        $finalMileCarrier = in_array($this->countryCode, array_keys(self::FINAL_MILE_CARRIERS)) ? self::FINAL_MILE_CARRIERS[$this->countryCode] : throw new CarrierNotSupportedException($this->countryCode);
+        if(!in_array($this->countryCode, array_keys(self::FINAL_MILE_CARRIERS))) {
+            throw new CarrierNotSupportedException($this->countryCode);
+        }
+        $finalMileCarrier = self::FINAL_MILE_CARRIERS[$this->countryCode];
 
         $this->name = $finalMileCarrier['name'];
         $this->url = sprintf($finalMileCarrier['url'], $this->trackingCode);
