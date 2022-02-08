@@ -1,5 +1,6 @@
 {
     "name": "myparcelcom/final-mile-tracking",
+    "description": "Final Mile Tracking library for the MyParcel.com microservices",
     "type": "library",
     "require-dev": {
         "mockery/mockery": "^1.5",
