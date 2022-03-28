@@ -121,7 +121,7 @@ class FinalMileCarrier
         'TW' => ['name' => self::CHUNGHWA_POST, 'url' => 'https://postserv.post.gov.tw/pstmail/main_mail.html?targetTxn=%s'],
         'TH' => ['name' => self::THAILAND_POST, 'url' => 'https://track.thailandpost.co.th/'],
         'TR' => ['name' => self::PTT, 'url' => 'https://gonderitakip.ptt.gov.tr/Track/Result'],
-        'UK' => ['name' => self::ROYAL_MAIL, 'url' => 'https://www.royalmail.com/track-your-item#/tracking-results/%s'],
+        'GB' => ['name' => self::ROYAL_MAIL, 'url' => 'https://www.royalmail.com/track-your-item#/tracking-results/%s'],
         'UY' => ['name' => self::CORREO_URUGUAYO, 'url' => 'https://www.correo.com.uy/seguimientodeenvios'],
         'US' => ['name' => self::USPS, 'url' => 'https://tools.usps.com/go/TrackConfirmAction?tRef=fullpage&tLc=2&text28777=&tLabels=%s%2C&tABt=false'],
     ];
