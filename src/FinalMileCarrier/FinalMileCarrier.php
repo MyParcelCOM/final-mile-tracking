@@ -86,7 +86,7 @@ class FinalMileCarrier
         'FR' => ['name' => self::LE_GROUPE_LA_POSTE, 'url' => 'https://www.laposte.fr/outils/suivre-vos-envois'],
         'DE' => ['name' => self::DEUTSCHE_POST, 'url' => 'https://www.deutschepost.de/sendung/simpleQueryResult.html'],
         'GH' => ['name' => self::GHANA_POST, 'url' => 'https://tools.v2.ghanapost.com.gh/toolsv1/'],
-        'GR' => ['name' => self::ELTA, 'url' => 'https://www.elta.gr/en-us/personal/tracktrace.aspx'],
+        'GR' => ['name' => self::ELTA, 'url' => 'https://itemsearch.elta.gr/en-GB/Query/Direct/%s'],
         'HK' => ['name' => self::HONGKONG_POST, 'url' => 'https://webapp.hongkongpost.hk/en/mail_tracking/index.html'],
         'HU' => ['name' => self::MAGYAR_POSTA, 'url' => 'https://www.posta.hu/nyomkovetes/nyitooldal?searchvalue=%s'],
         'IS' => ['name' => self::ICELAND_POST, 'url' => 'https://posturinn.is/en/individuals/receive/track-shipment/?q=%s'],
