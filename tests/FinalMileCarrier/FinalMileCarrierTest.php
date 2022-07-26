@@ -23,6 +23,12 @@ class FinalMileCarrierTest extends TestCase
     }
 
     /** @test */
+    public function itShouldReturnTheTrackingCode(): void
+    {
+        $this->assertEquals('12345678', (new FinalMileCarrier('BE', '12345678'))->getTrackingCode());
+    }
+
+    /** @test */
     public function itShouldThrowAnExceptionWhenAnInvalidCountryCodeIsProvided(): void
     {
         $this->expectException(CarrierNotSupportedException::class);
