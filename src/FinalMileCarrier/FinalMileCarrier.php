@@ -179,7 +179,7 @@ class FinalMileCarrier
         'UY' => ['name' => self::CORREO_URUGUAYO, 'url' => 'https://www.correo.com.uy/seguimientodeenvios'],
         'US' => [
             'name' => self::USPS,
-            'url'  => 'https://tools.usps.com/go/TrackConfirmAction?tRef=fullpage&tLc=2&text28777=&tLabels=%s%2C&tABt=false',
+            'url'  => 'https://tools.usps.com/go/TrackConfirmAction?tRef=fullpage&tLc=2&text28777=&tLabels=%s&tABt=false',
         ],
     ];
 
