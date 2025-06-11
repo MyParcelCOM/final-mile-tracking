@@ -13,7 +13,7 @@ class FinalMileCarrierTest extends TestCase
     /** @test */
     public function itShouldGenerateACarrierUrl(): void
     {
-        $this->assertEquals('https://track.bpost.cloud/btr/web/#/search?lang=fr&itemCode=12345678&postalCode=3080', (new FinalMileCarrier('BE', '12345678'))->getUrl());
+        $this->assertEquals('https://track.bpost.cloud/btr/web/#/search?itemCode=12345678', (new FinalMileCarrier('BE', '12345678'))->getUrl());
     }
 
     /** @test */
