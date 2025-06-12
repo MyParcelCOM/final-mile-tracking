@@ -17,6 +17,6 @@ jobs:
       - name: PHPUnit
         uses: php-actions/phpunit@v4
         with:
-          version: "9"
+          version: "11"
           php_version: "8.2"
           configuration: "phpunit.xml"

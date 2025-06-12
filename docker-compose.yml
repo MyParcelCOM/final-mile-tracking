@@ -6,6 +6,7 @@ services:
     image: myparcelcom/final-mile-tracking:v1-dev
     working_dir: /opt/app
     volumes:
+      - .:/opt/app
       - composercache:/.composer/cache
 
 volumes:

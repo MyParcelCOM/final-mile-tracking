@@ -35,7 +35,7 @@ class FinalMileCarrierTest extends TestCase
         new FinalMileCarrier('XX', '12345678');
     }
 
-    public function carrierCountryCodeDataProvider(): array
+    public static function carrierCountryCodeDataProvider(): array
     {
         return [
             ['AR'],
