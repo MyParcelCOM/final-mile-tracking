@@ -10,29 +10,25 @@ use PHPUnit\Framework\TestCase;
 
 class FinalMileCarrierTest extends TestCase
 {
-    /** @test */
-    public function itShouldGenerateACarrierUrl(): void
+    public function testItShouldGenerateACarrierUrl(): void
     {
         $this->assertEquals('https://track.bpost.cloud/btr/web/#/search?itemCode=12345678', (new FinalMileCarrier('BE', '12345678'))->getUrl());
     }
 
-    /** @test */
-    public function itShouldReturnTheCarrierName(): void
+    public function testItShouldReturnTheCarrierName(): void
     {
         $this->assertEquals('bpost', (new FinalMileCarrier('BE', '12345678'))->getName());
     }
 
     /**
      * @dataProvider carrierCountryCodeDataProvider
-     * @test
      */
-    public function itShouldReturnTheTrackingCode(string $countryCode): void
+    public function testItShouldReturnTheTrackingCode(string $countryCode): void
     {
         $this->assertEquals('12345678', (new FinalMileCarrier($countryCode, '12345678'))->getTrackingCode());
     }
 
-    /** @test */
-    public function itShouldThrowAnExceptionWhenAnInvalidCountryCodeIsProvided(): void
+    public function testItShouldThrowAnExceptionWhenAnInvalidCountryCodeIsProvided(): void
     {
         $this->expectException(CarrierNotSupportedException::class);
         $this->expectExceptionMessage('No carrier found for country code XX');

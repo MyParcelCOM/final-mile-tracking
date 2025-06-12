@@ -118,7 +118,7 @@ class FinalMileCarrier
         ],
         'EG' => [
             'name' => self::EGYPT_POST,
-            'url'  => 'https://www.egyptpost.org/track-details?itemReference=%s&as_sfid=AAAAAAVa7tvM_iK_75BRxVqwujfCMmnk0esyAuSR9l7QCG5DxwxdEQ4X9TqOwI1VwjEI4-DkWhST2khczxem6BuYXhVqOxAxRdZ0fmCG-fRpM0Zz49WwI45fZdWroQAwOObVrMjqioUkRJiphVwF4sWAxhw8gus1wEHBNBmJVFnyl7SSXQ%3D%3D&as_fid=675b5568121a827a35964e8bfd8b4e83c0cf7c4d',
+            'url'  => 'https://www.egyptpost.org/track-details?itemReference=%s&as_fid=675b5568121a827a35964e8bfd8b4e83c0cf7c4d',
         ],
         'EE' => [
             'name' => self::OMNIVA,

@@ -1,0 +1,13 @@
+services:
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: myparcelcom/final-mile-tracking:v1-dev
+    working_dir: /opt/app
+    volumes:
+      - composercache:/.composer/cache
+
+volumes:
+  composercache:
+    driver: local
