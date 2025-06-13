@@ -4,12 +4,8 @@
          bootstrap="vendor/autoload.php"
          cacheResult="false"
          colors="true"
->
-    <coverage processUncoveredFiles="true">
-        <include>
-            <directory suffix=".php">src</directory>
-        </include>
-    </coverage>
+         displayDetailsOnTestsThatTriggerDeprecations="true"
+         displayDetailsOnPhpunitDeprecations="true">
     <testsuites>
         <testsuite name="MyParcel.com Tracking Module Test Suite">
             <directory>tests</directory>

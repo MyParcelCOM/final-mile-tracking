@@ -4,11 +4,11 @@
     "type": "library",
     "license": "Apache-2.0",
     "require-dev": {
-        "mockery/mockery": "^1.5",
-        "phpunit/phpunit": "^9.5"
+        "mockery/mockery": "^1.6",
+        "phpunit/phpunit": "^11.0"
     },
     "require": {
-        "php": ">=8.0"
+        "php": ">=8.2"
     },
     "autoload": {
         "psr-4": {

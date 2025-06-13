@@ -1,12 +1,12 @@
 # final-mile-tracking
-A library to generate final mile tracking links
+A library to generate final mile tracking links.
 
 ## PHP 8
-The minimum PHP version is 8.0. 
+The minimum PHP version is 8.2. 
 
 ## Installation
-```composer install```
+docker compose run --rm php composer ```install```
 
 ## Run tests
 You can run the test via composer
-```composer run test```
+```docker compose run --rm php composer test```
