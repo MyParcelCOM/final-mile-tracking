@@ -6,6 +6,7 @@ namespace FinalMileCarrier;
 
 use MyParcelCom\FinalMileCarrier\Exception\CarrierNotSupportedException;
 use MyParcelCom\FinalMileCarrier\FinalMileCarrier;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 class FinalMileCarrierTest extends TestCase
@@ -20,9 +21,7 @@ class FinalMileCarrierTest extends TestCase
         $this->assertEquals('bpost', (new FinalMileCarrier('BE', '12345678'))->getName());
     }
 
-    /**
-     * @dataProvider carrierCountryCodeDataProvider
-     */
+    #[DataProvider('carrierCountryCodeDataProvider')]
     public function testItShouldReturnTheTrackingCode(string $countryCode): void
     {
         $this->assertEquals('12345678', (new FinalMileCarrier($countryCode, '12345678'))->getTrackingCode());

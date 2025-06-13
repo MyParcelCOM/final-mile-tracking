@@ -2,7 +2,7 @@ services:
   php:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: docker/php/Dockerfile
     image: myparcelcom/final-mile-tracking:v1-dev
     working_dir: /opt/app
     volumes:
