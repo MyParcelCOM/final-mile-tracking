@@ -158,7 +158,7 @@ class FinalMileCarrier
         ],
         'IN' => [
             'name' => self::INDIA_POST,
-            'url'  => 'https://www.indiapost.gov.in/_layouts/15/DOP.Portal.Tracking/TrackConsignment.aspx',
+            'url'  => 'https://www.indiapost.gov.in/#trackandtrace',
         ],
         'ID' => [
             'name' => self::POS_INDONESIA,
